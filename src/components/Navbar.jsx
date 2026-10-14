@@ -35,8 +35,14 @@ function Navbar() {
   }, []);
 
   return (
-    <header className={`navbar-wrapper ${scrolled ? "scrolled" : ""}`}>
-      <nav className="navbar">
+    <header
+      className={`navbar-wrapper ${scrolled ? "scrolled" : ""}`}
+      style={{
+        backgroundColor: scrolled ? "rgba(7, 8, 12, 0.94)" : "rgba(8, 9, 14, 0.85)",
+        color: "#ffffff",
+      }}
+    >
+      <nav className="navbar" style={{ background: "transparent", backgroundColor: "transparent" }}>
         <a href="#home" className="logo" aria-label="Parthiban Portfolio">
           <span className="logo-badge">PS</span>
           <span className="logo-title">
